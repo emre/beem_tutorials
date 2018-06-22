@@ -206,7 +206,8 @@ Beneficiaries is an interesting option here, we will discuss it in the upcoming 
 #### Sample Codes:
 [https://github.com/emre/beem_tutorials/tree/master/01_Introduction_and_Basic_Operations/samples](https://github.com/emre/beem_tutorials/tree/master/01_Introduction_and_Basic_Operations/samples)
 
-
+***
+Thanks to @holger80 and @crokkon for the proof-reading and review.
 
  
 

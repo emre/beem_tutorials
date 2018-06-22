@@ -128,7 +128,7 @@ steem.wallet.wipe(True)
 before creating a new wallet. Otherwise you will get an error that there is already a wallet
 exists.
 
-You can also use the command line tool (```$beempy```) ships with the package to perform 
+You can also use the command line tool (```beempy```) ships with the package to perform 
 wallet related issues.
 
 

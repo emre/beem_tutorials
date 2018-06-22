@@ -1,5 +1,8 @@
 <img src="https://steemitimages.com/0x0/https://cdn.utopian.io/posts/d563a408c062506aed88befbe7781399184fbeem-logo.png">
 
+#### Repository of Beem
+[https://github.com/holgern/beem](https://github.com/holgern/beem)    
+
 #### Tutorial Content
 
 - You will learn how to get started with Beem.
@@ -54,7 +57,7 @@ The first parameter is a list of nodes you want to connect. Let's run the same e
 ```python
 from beem import Steem
 s = Steem(
-    ["https://api.steemit.com",]
+    node=["https://api.steemit.com",]
 )
 
 print(s.get_blockchain_version())
@@ -67,7 +70,7 @@ You will see the output has changed as ```0.19.4``` since api.steemit.com runs a
 ```python
 from beem import Steem
 s = Steem(
-    ["https://api.steemit.com",],
+    node=["https://api.steemit.com",],
     keys=["<private_key_1>", "<private_key_2>"]
 )
 ```
@@ -86,7 +89,7 @@ import os
 
 from beem import Steem
 s = Steem(
-    ["https://api.steemit.com",],
+    node=["https://api.steemit.com",],
     keys=[os.getenv("POSTING_KEY"), ]
 )
 ```
@@ -199,10 +202,6 @@ Beneficiaries is an interesting option here, we will discuss it in the upcoming 
 #### Curriculum
 
 - [Introduction to Beem and creating a post with it](@emrebeyler/introduction-to-beem-and-creating-a-post-with-it)
-
-
-#### Repository of Beem
-[https://github.com/holgern/beem](https://github.com/holgern/beem)    
 
 #### Sample Codes:
 [https://github.com/emre/beem_tutorials/tree/master/01_Introduction_and_Basic_Operations/samples](https://github.com/emre/beem_tutorials/tree/master/01_Introduction_and_Basic_Operations/samples)

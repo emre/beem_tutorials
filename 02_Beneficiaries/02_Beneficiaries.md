@@ -14,7 +14,7 @@
 
 ***
 
-In the first part of [this series](- [Introduction to Beem and creating a post with it](/@emrebeyler/beem-tutorials-1-introduction-to-beem-and-creating-a-post-with-it)), we had a sweet introduction to the library and created a post. One of the options of post() function of Beem is the **beneficiaries**.
+In the first part of [this series](/@emrebeyler/beem-tutorials-1-introduction-to-beem-and-creating-a-post-with-it), we had a sweet introduction to the library and created a post. One of the options of post() function of Beem is the **beneficiaries**.
 
 #### Beneficiaries
 
@@ -94,11 +94,12 @@ As you can see from the output, beneficiaries are actually set in the ```Comment
 
 **Note:** ```'weight': 1000``` means that %10 of the author rewards. Steem blockchain uses same weight convention on blockchain code. Just divide by 100 and get the value in percent when you see weight in any operation.
 
-<center>![Screen Shot 2018-06-23 at 7.56.57 PM.png](https://cdn.steemitimages.com/DQmTJhACJszmSbb15VaaU2rExopefKAhoiFJswvj6pFUND3/Screen%20Shot%202018-06-23%20at%207.56.57%20PM.png)</center>
+<center><img src="https://cdn.steemitimages.com/DQmTJhACJszmSbb15VaaU2rExopefKAhoiFJswvj6pFUND3/Screen%20Shot%202018-06-23%20at%207.56.57%20PM.png"></center>
+
 <center><sup>steemd representation of the post</sup></center>
 
 
-#### Notes and Limitations
+#### Limitations
 
 - You cannot specify more than 8 beneficiaries.
 - Total weight cannot be greater than 10000 (Obviously).
@@ -106,6 +107,14 @@ As you can see from the output, beneficiaries are actually set in the ```Comment
 - While it's possible to set beneficiaries after the post creation, it's not possible if the post got a vote beforehand. It's highly suggested to bundle the operations. (Beem already does that.)
 
 
+#### Curriculum
+
+- [Introduction to Beem and creating a post with it](/@emrebeyler/beem-tutorials-1-introduction-to-beem-and-creating-a-post-with-it)
+- [Setting beneficiaries with Beem](/@emrebeyler-beem-tutorials-2-setting-beneficiaries=with-beem)
+
+#### Sample Codes
+
+[Samples](https://github.com/emre/beem_tutorials/tree/master/02_Beneficiaries/samples)
 
 
 

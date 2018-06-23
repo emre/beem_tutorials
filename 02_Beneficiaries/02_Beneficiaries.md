@@ -104,7 +104,8 @@ As you can see from the output, beneficiaries are actually set in the ```Comment
 - You cannot specify more than 8 beneficiaries.
 - Total weight cannot be greater than 10000 (Obviously).
 - Account names must be specified in sorted order.
-- While it's possible to set beneficiaries after the post creation, it's not possible if the post got a vote beforehand. It's highly suggested to bundle the operations. (Beem already does that.)
+- While it's possible to set beneficiaries after the post creation, it's not possible if the post got a vote or a comment. It's highly suggested to bundle the operations. (Beem already does that.)
+- Once beneficiaries set, there is no way to remove or update them for a particular post.
 
 
 #### Curriculum

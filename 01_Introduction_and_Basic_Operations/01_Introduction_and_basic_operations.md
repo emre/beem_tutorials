@@ -20,7 +20,7 @@
 
 After seeing it's constant development and getting very good feedbacks about the library, I have decided to switch to beem for my bots and scripts.
 
-I will learning Beem in the next couple of weeks and will write my experience on it as a tutorial series. Welcome to the first part of it. 
+I will be learning Beem in the next couple of weeks and will write my experience on it as a tutorial series. Welcome to the first part of it. 
 
 #### Installation
 
@@ -46,9 +46,7 @@ print(s.get_blockchain_version())
 
 You will see an output as ```0.19.2```.
 
-This is the main class we use to interact with the blockchain. You can see the parameters
-and their definitions at [source code/steem.py](https://github.com/holgern/beem/blob/77f41933b7e2f37638dc1df900efcf9ea2a7d7e6/beem/steem.py#L37). However, you don't really need all of them.
-I will cover the important ones.
+This is the main class we use to interact with the blockchain. You can see the parameters and their definitions at [source code/steem.py](https://github.com/holgern/beem/blob/77f41933b7e2f37638dc1df900efcf9ea2a7d7e6/beem/steem.py#L37). However, you don't really need all of them. I will cover the important ones.
 
 ##### Setting a node
 
@@ -75,9 +73,7 @@ s = Steem(
 )
 ```
 
-Keys are private keys you have on steem accounts. If you want to 
-create a post, you need *posting private key* entered here. However, storing
-keys raw in source codes may not be the best solution since you may push your
+Keys are private keys you have on steem accounts. If you want to create a post, you need *posting private key* entered here. However, storing keys raw in source codes may not be the best solution since you may push your
 private keys to the repositories.
 
 There are a couple of options to solve that issue:
@@ -94,8 +90,7 @@ s = Steem(
 )
 ```
 
-This example gets the posting key from environment variables. You need to set
-that ```POSTING_KEY``` variable before executing the code.
+This example gets the posting key from environment variables. You need to set that ```POSTING_KEY``` variable before executing the code.
 
 ```
 POSTING_KEY=<posting_key_of_account> python script.py
@@ -104,6 +99,7 @@ POSTING_KEY=<posting_key_of_account> python script.py
 - Using Beem's wallet 
 
 Beem has a wallet implementation to make account/wallet related options more practical.
+
 The following code creates a wallet with ```unique-pass``` passphrase and adds a private key
 into the wallet.
 
@@ -115,8 +111,7 @@ steem.wallet.unlock("unique-pass")
 steem.wallet.addPrivateKey("<posting_wif>")
 ```
 
-After doing that, whenever you need to broadcast something you can unlock the wallet by
-setting ```UNLOCK``` environment variable.
+After doing that, whenever you need to broadcast something you can unlock the wallet by setting ```UNLOCK``` environment variable.
 
 Note: If you already created a wallet and don't remember the password, you can wipe the old
 wallet by
@@ -144,9 +139,7 @@ To add private keys to the wallet:
 $ beempy addkey <your_private_key>
 ```
 
-**Note:** Beem stores wallet information on a SQLITE database. It's stored at
- ```~/Library/Application\ Support/beem/beem.sqlite``` for my OSX setup. You can
- see where it's located from the steem.config object:
+**Note:** Beem stores wallet information on a SQLITE database. It's stored at ```~/Library/Application\ Support/beem/beem.sqlite``` for my OSX setup. You can see where it's located from the steem.config object:
  
  ```python
 from beem import Steem
@@ -201,13 +194,11 @@ Beneficiaries is an interesting option here, we will discuss it in the upcoming 
 
 #### Curriculum
 
-- [Introduction to Beem and creating a post with it](@emrebeyler/introduction-to-beem-and-creating-a-post-with-it)
+- [Introduction to Beem and creating a post with it](/@emrebeyler/beem-tutorials-1-introduction-to-beem-and-creating-a-post-with-it)
 
-#### Sample Codes:
-[https://github.com/emre/beem_tutorials/tree/master/01_Introduction_and_Basic_Operations/samples](https://github.com/emre/beem_tutorials/tree/master/01_Introduction_and_Basic_Operations/samples)
+#### Sample Codes
+
+[Samples](https://github.com/emre/beem_tutorials/tree/master/01_Introduction_and_Basic_Operations/samples)
 
 ***
 Thanks to @holger80 and @crokkon for the proof-reading and review.
-
- 
-

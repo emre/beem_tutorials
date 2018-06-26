@@ -5,7 +5,7 @@
 
 #### Tutorial Content
 
-- You will learn about the beneficiaries and how to set it via Beem on post creation.
+- You will learn about the beneficiaries and how to set them via Beem on post creation.
 
 #### Requirements
 
@@ -46,7 +46,7 @@ resp = steem.post(
 print(resp)
 ```
 
-This is the same example on the first tutorial except on extra ```beneficiaries```. It's a list of python dicts where you store account names and their reward weights. (sharing percentages.)
+This is the same example on the first tutorial except extra ```beneficiaries```. It's a list of python dictionaries where you store account names and their reward weights. (sharing percentages.)
 
 This code will give an output like that:
 
@@ -92,7 +92,7 @@ This code will give an output like that:
 
 As you can see from the output, beneficiaries are actually set in the ```CommentOption``` operation. We basically push two operations (```Comment``` and ```CommentOption``` in one transaction to set beneficiaries. 
 
-**Note:** ```'weight': 1000``` means that %10 of the author rewards. Steem blockchain uses same weight convention on blockchain code. Just divide by 100 and get the value in percent when you see weight in any operation.
+**Note:** ```'weight': 1000``` means that %10 of the author rewards. Steem blockchain uses same weight convention on blockchain code. Just divide by 100 and get the value in percent when you see the weight in any operation.
 
 <center><img src="https://cdn.steemitimages.com/DQmTJhACJszmSbb15VaaU2rExopefKAhoiFJswvj6pFUND3/Screen%20Shot%202018-06-23%20at%207.56.57%20PM.png"></center>
 
@@ -103,7 +103,7 @@ As you can see from the output, beneficiaries are actually set in the ```Comment
 
 - You cannot specify more than 8 beneficiaries.
 - Total weight cannot be greater than 10000 (Obviously).
-- Account names must be specified in sorted order.
+- Account names must be specified sorted.
 - While it's possible to set beneficiaries after the post creation, it's not possible if the post got a vote or a comment. It's highly suggested to bundle the operations. (Beem already does that.)
 - Once beneficiaries set, there is no way to remove or update them for a particular post.
 
@@ -111,12 +111,9 @@ As you can see from the output, beneficiaries are actually set in the ```Comment
 #### Curriculum
 
 - [Introduction to Beem and creating a post with it](/@emrebeyler/beem-tutorials-1-introduction-to-beem-and-creating-a-post-with-it)
-- [Setting beneficiaries with Beem](/@emrebeyler-beem-tutorials-2-setting-beneficiaries=with-beem)
+- [Setting beneficiaries with Beem](/@emrebeyler/beem-tutorials-2-beneficiaries)
 
 #### Sample Codes
 
 [Samples](https://github.com/emre/beem_tutorials/tree/master/02_Beneficiaries/samples)
-
-
-
 

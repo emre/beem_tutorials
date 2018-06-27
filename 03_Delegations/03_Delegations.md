@@ -153,7 +153,7 @@ We will go into more details with **history** function in upcoming tutorials. It
 
 #### Outgoing Delegations
 
-Luckily, steem daemon has a call for that.
+Luckily, steem daemon has a call for that. Let's see which projects are supported by Steemit INC. :)
 
 ```python
 from beem.account import Account

@@ -78,7 +78,7 @@ This script delegates 1 SP to @holger80.
 
 **Note**: The amount of SP to delegate is passed as [VESTS](https://www.steem.center/index.php?title=Vest). We use Beem's conversion helpers (```steem.sp_to_vests(<amount>)``` to pass the amount in VESTS form.)
 
-#### Creating delegations with Beem
+#### Revoking delegations with Beem
 
 It has the same mechanics except one little change. This time we will pass the amount as zero.
 
@@ -96,7 +96,7 @@ resp = acc.delegate_vesting_shares(
 
 When you revoke your delegation, there is a one week cooldown period to get the SP back in use. If you delegate/undelegate multiple times, you get confused when you get your SP back.
 
-Steem daemon has a call that answers that questions. 
+Steem daemon has a call that answers that question. 
 
 ```python
 from beem.account import Account

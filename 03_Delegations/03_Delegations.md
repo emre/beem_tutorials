@@ -160,7 +160,7 @@ from beem.account import Account
 
 
 def main():
-    acc = Account('misterdelegations')
+    acc = Account('misterdelegation')
     print(acc.get_vesting_delegations())
 
 

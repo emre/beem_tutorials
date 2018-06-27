@@ -71,12 +71,12 @@ if __name__ == '__main__':
 
 ```
 
-This scripts delegates 1 SP to @holger80.
+This script delegates 1 SP to @holger80.
 
 <img src="https://steemitimages.com/0x0/https://cdn.steemitimages.com/DQmbnRe8SAcbNHeNohkEuuktzeCJ7sw2oX59rRTnruY83to/Screen%20Shot%202018-06-27%20at%209.45.45%20PM.png">
-<sup><center>steemd represantation of the post</center></sup>
+<sup><center>steemd represantation of the operation</center></sup>
 
-**Note**: The amount of SP to delegate is passed as [VESTS](https://www.steem.center/index.php?title=Vest). We use Beem's convertion helpers (```steem.sp_to_vests(<amount>)``` to pass the amount in VESTS form.)
+**Note**: The amount of SP to delegate is passed as [VESTS](https://www.steem.center/index.php?title=Vest). We use Beem's conversion helpers (```steem.sp_to_vests(<amount>)``` to pass the amount in VESTS form.)
 
 #### Creating delegations with Beem
 
@@ -148,7 +148,7 @@ if __name__ == '__main__':
 
 We will go into more details with **history** function in upcoming tutorials. It's a function where you can get all operations related to a particular account. We pass ```only_ops``` parameter as ```delegate_vesting_shares``` since we're only interested in delegation operations for this script.
 
-**Note:** You may need to implement a simple state machine to learn which delegations are active or expired. If a delegation operation created with 0 VESTS, that means the previous delegation from that account is not active any more.
+**Note:** You may need to implement a simple state machine to learn which delegations are active or expired. If a delegation operation created with 0 VESTS, that means the previous delegation from that account is not active anymore.
 
 
 #### Outgoing Delegations
